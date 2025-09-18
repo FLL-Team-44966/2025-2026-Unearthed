@@ -28,14 +28,15 @@ drive_base.use_gyro(True)
 ###################################
 # Mission specific code is below:
 
+drive_base.straight(620)
+
+drive_base.arc(160, 90)
+
 drive_base.settings(straight_speed=100)
-drive_base.straight(-70)
+drive_base.straight(-130)
 # Value is degrees to spin.
 # Positive is right/clockwise; Negative is left/counter-clockwise
 
-drive_base.turn(-30)
-drive_base.turn(35)
-drive_base.turn(-30)
-drive_base.turn(35)
-drive_base.turn(-30)
-drive_base.turn(35)
+for i in range(7):
+    drive_base.turn(-25)
+    drive_base.turn(3)

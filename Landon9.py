@@ -57,12 +57,19 @@ drive_base.straight(155)
 drive_base.straight(-255) #backing away from soil deposit after moving 1st slab
 
 drive_base.arc(15, 45) #lining up to get second Slab
-drive_base.straight(395)#getting 2nd slab
+drive_base.straight(385)#getting 2nd slab
+drive_base.settings(straight_speed=150)
+print("turning")
 drive_base.turn(90) #securing 2nd slab
-drive_base.arc(50, 90)
+drive_base.arc(25, 90)
+drive_base.straight(375)#gping back to da base 
+drive_base.straight(-50)#unlooping the hanging slab
+print("shold be unlooped")
+'''
 print (Turned)
 wait(1000)
 drive_base.stright(500)
+'''
 '''
 wait(5000)
 drive_base.arc(0,-90)

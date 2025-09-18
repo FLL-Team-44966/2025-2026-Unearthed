@@ -38,5 +38,7 @@ drive_base.straight(-130)
 # Positive is right/clockwise; Negative is left/counter-clockwise
 
 for i in range(7):
-    drive_base.turn(-25)
-    drive_base.turn(3)
+# First value is radius (mm). [positive is right turn; negative is left turn]
+# Angle is robot heading end. [positive is forward; negative is backward]
+    drive_base.turn(-30)
+    drive_base.turn(32)

@@ -27,25 +27,15 @@ drive_base.use_gyro(True)
 
 ###################################
 # Mission specific code is below:
-drive_base.settings(straight_speed=977)
-drive_base.straight(610)
-drive_base.settings(straight_speed=400)
-drive_base.arc(160, 90)
 
 drive_base.settings(straight_speed=100)
-drive_base.straight(-135)
+drive_base.straight(-70)
 # Value is degrees to spin.
 # Positive is right/clockwise; Negative is left/counter-clockwise
 
-for i in range(9):
-# First value is radius (mm). [positive is right turn; negative is left turn]
-# Angle is robot heading end. [positive is forward; negative is backward]
-    drive_base.turn(-30)
-    drive_base.turn(31)
-
-drive_base.straight(130)
-drive_base.turn(100)
-drive_base.settings(straight_speed=977)
-drive_base.straight(900)
-
-
+drive_base.turn(-30)
+drive_base.turn(35)
+drive_base.turn(-30)
+drive_base.turn(35)
+drive_base.turn(-30)
+drive_base.turn(35)

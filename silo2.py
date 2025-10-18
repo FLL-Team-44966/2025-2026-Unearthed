@@ -35,14 +35,11 @@ drive_base.use_gyro(True)
 # Mission specific code is below:
 drive_base.settings(straight_speed=700, straight_acceleration=2000)
 
-#Driving to mission
+
 drive_base.straight(300)
 
 #First value is speed (deg/sec)
 # Second value is the amount of rotation (deg)
-#Flipping down wheel
-#front_motor.run_angle(200, -250)
-wait(500)
+front_motor.run_angle(1000000, -700)
 
-#Driving back to home
 drive_base.straight(-350)

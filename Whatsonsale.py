@@ -27,5 +27,9 @@ drive_base.use_gyro(True)
 
 ###################################
 # Mission specific code is below:
-drive_base.settings(straight_speed=700, straight_acceleration=2000)
+drive_base.settings(straight_speed=700)
 drive_base.straight(300)
+drive_base.straight(-300)
+drive_base.arc(-200, 70)
+drive_base.arc(215, 168)
+drive_base.arc(-200, 200)

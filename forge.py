@@ -29,6 +29,32 @@ drive_base.straight(565)# Driving to forge  #It hits the forge lever to forward 
 # Drives an arc (a partial circle) with a given radius.
 # First value is radius (mm). [positive is right turn; negative is left turn]
 # Angle is robot heading end. [positive is forward; negative is backward]
-drive_base.arc(-100, angle=45) #turning to dump rocks then land
+drive_base.arc(-100, angle=90) #turning to dump rocks then land
 # Drive forward by 500mm (half a meter)
 drive_base.straight(100)# Driving to move land
+
+# Turn one wheel only.
+# 56 is half of wheel base. [positive is right turn; negative is left turn]
+# Angle is robot heading end. [positive is forward; negative is backward]
+drive_base.arc(56, angle=90)
+
+# Drive forward by 500mm (half a meter)
+drive_base.straight(-670)
+
+# OPTIONAL (add this before driving)
+# Default speed is 700, but can change as needed (Minimum = 4, Max = 977)
+drive_base.settings(straight_speed=670)
+# Turn one wheel only.
+# 56 is half of wheel base. [positive is right turn; negative is left turn]
+# Angle is robot heading end. [positive is forward; negative is backward]
+drive_base.arc(56, angle=90)
+# Turn one wheel only.
+# 56 is half of wheel base. [positive is right turn; negative is left turn]
+# Angle is robot heading end. [positive is forward; negative is backward]
+drive_base.arc(56, angle=90)
+# Drive forward by 500mm (half a meter)
+drive_base.straight(500)
+
+# OPTIONAL (add this before driving)
+# Default speed is 200, but can change as needed (Minimum = 4, Max = 977)
+drive_base.settings(straight_speed=600)

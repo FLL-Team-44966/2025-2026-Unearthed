@@ -36,7 +36,7 @@ drive_base.use_gyro(True)
 drive_base.settings(straight_speed=700, straight_acceleration=2000)
 
 
-drive_base.straight(315)
+drive_base.straight(300)
 
 #First value is speed (deg/sec)
 # Second value is the amount of rotation (deg)

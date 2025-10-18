@@ -24,9 +24,10 @@ drive_base.use_gyro(True)
 
 
 # Drive forward by 500mm (half a meter)
-drive_base.straight(565)
+#drive to boulder dropper
+drive_base.straight(560)
 
-it hits the foge lever to forward damiging setup lower the langth and the turn to a corect angel
+#it hits the foge lever to forward damiging setup lower the langth and the turn to a corect angel
 
 # OPTIONAL (add this before driving)
 # Default speed is 200, but can change as needed (Minimum = 4, Max = 977)

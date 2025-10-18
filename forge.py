@@ -19,16 +19,15 @@ right_color_sensor = ColorSensor(Port.F)
 drive_base = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=112)
 # Use the gyro to navigate more accurately
 drive_base.use_gyro(True)
-###################################
 # Mission specific code is below:
 
 
-# Drive forward by 500mm (half a meter)
-drive_base.straight(565)# Driving to forge  #It hits the forge lever to forward damaging setup lower the length and the turn to a corect angle
+
+drive_base.straight(500)# Driving to forge  #It hits the forge lever to forward damaging setup lower the length and the turn to a corect angle
 
 # Drives an arc (a partial circle) with a given radius.
 # First value is radius (mm). [positive is right turn; negative is left turn]
 # Angle is robot heading end. [positive is forward; negative is backward]
-drive_base.arc(-100, angle=45) #turning to dump rocks then land
-# Drive forward by 500mm (half a meter)
+drive_base.arc(-90, angle=90) #turning to dump rocks then land
 drive_base.straight(100)# Driving to move land
+drive_base.straight(-500)# Driving to home

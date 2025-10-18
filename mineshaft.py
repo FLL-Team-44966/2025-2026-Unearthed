@@ -31,4 +31,9 @@ drive_base.turn(90) # Turns line up to go to Mineshaft
 drive_base.straight(325) # Goes to the mineshaft
 drive_base.turn(-90) # lines up with minechaft
 drive_base.straight(30) #makes so the attachment hits 
-front_motor.run_angle(250, -2550) # doing activity 
+front_motor.run_angle(250, -1275) # doing activity 
+drive_base.straight(-30)
+drive_base.turn(-90) #turns away from mineshaft to home
+drive_base.straight(330)
+drive_base.turn(-90)
+drive_base.straight(10000)#Goes Home

@@ -21,9 +21,10 @@ drive_base = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=11
 drive_base.use_gyro(True)
 ###################################
 # Mission specific code is below:
+drive_base.settings(straight_speed=970,turn_acceleration=100)
 
 # Drive forward by 500mm (half a meter)
-drive_base.straight(565)# Driving to forge  #It hits the forge lever to forward damaging setup lower the length and the turn to a corect angle
+drive_base.straight(558)# Driving to forge  #It hits the forge lever to forward damaging setup lower the length and the turn to a corect angle
 
 # Drives an arc (a partial circle) with a given radius.
 # First value is radius (mm). [positive is right turn; negative is left turn]
@@ -39,7 +40,6 @@ drive_base.arc(56, angle=90)
 
 # Drive back to home
 drive_base.straight(-670)
-drive_base.settings(straight_speed=970)
 
 # OPTIONAL (add this before driving)
 # Default speed is 700, but can change as needed (Minimum = 4, Max = 977)
@@ -57,7 +57,7 @@ drive_base.arc(55, angle=90)
 drive_base.settings(straight_speed=970)
 
 # Drive forward by 500mm (half a meter)
-drive_base.straight(400)
+drive_base.straight(300)
 drive_base.settings(straight_speed=970)
 
 # OPTIONAL (add this before driving)

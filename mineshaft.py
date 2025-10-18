@@ -22,13 +22,6 @@ drive_base.use_gyro(True)
 ###################################
 # Mission specific code is below:
 
-
-# Drive forward by 500mm (half a meter)
-drive_base.straight(565)# Driving to forge  #It hits the forge lever to forward damaging setup lower the length and the turn to a corect angle
-
-# Drives an arc (a partial circle) with a given radius.
-# First value is radius (mm). [positive is right turn; negative is left turn]
-# Angle is robot heading end. [positive is forward; negative is backward]
-drive_base.arc(-100, angle=45) #turning to dump rocks then land
-# Drive forward by 500mm (half a meter)
-drive_base.straight(100)# Driving to move land
+# First value is speed (deg/sec)
+# Second value is the amount of rotation (deg)
+front_motor.run_angle(500, -2550)

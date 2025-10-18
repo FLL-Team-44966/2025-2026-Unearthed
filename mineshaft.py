@@ -24,4 +24,11 @@ drive_base.use_gyro(True)
 
 # First value is speed (deg/sec)
 # Second value is the amount of rotation (deg)
-front_motor.run_angle(500, -2550)
+#front_motor.run_angle(500, -2550)
+drive_base.settings(straight_speed=300)
+drive_base.straight(600) # Stright past Brush
+drive_base.turn(90) # Turns line up to go to Mineshaft
+drive_base.straight(325) # Goes to the mineshaft
+drive_base.turn(-90) # lines up with minechaft
+drive_base.straight(30) #makes so the attachment hits 
+front_motor.run_angle(250, -2550) # doing activity 

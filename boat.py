@@ -24,7 +24,7 @@ drive_base.use_gyro(True)
 
 # go to boat
 drive_base.settings(straight_speed=400)
-drive_base.straight(700)
+drive_base.straight(670)
 
 #come home
 drive_base.settings(straight_speed=300)

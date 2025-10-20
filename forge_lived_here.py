@@ -21,45 +21,48 @@ drive_base = DriveBase(left_motor, right_motor, wheel_diameter=56, axle_track=11
 drive_base.use_gyro(True)
 ###################################
 # Mission specific code is below:
-drive_base.settings(straight_speed=970,turn_acceleration=100)
 
+drive_base.settings(straight_speed=970,turn_acceleration=200)
 # Drive forward by 500mm (half a meter)
 drive_base.straight(558)# Driving to forge  #It hits the forge lever to forward damaging setup lower the length and the turn to a corect angle
-
-# Drives an arc (a partial circle) with a given radius.
-# First value is radius (mm). [positive is right turn; negative is left turn]
-# Angle is robot heading end. [positive is forward; negative is backward]
-drive_base.arc(-100, angle=90) #turning to dump rocks then land
-# Drive forward by 500mm (half a meter)
+drive_base.arc(-80, angle=90) #turning to dump rocks then land
 drive_base.straight(100)# Driving to move land
 
 # Turn one wheel only.
 # 56 is half of wheel base. [positive is right turn; negative is left turn]
 # Angle is robot heading end. [positive is forward; negative is backward]
-drive_base.arc(56, angle=90)
+drive_base.arc(56, angle=90) #aligns to home
+drive_base.straight(-475) # Drive back to home
+ 
+# Drives an arc (a partial circle) with a given radius.
+# First value is radius (mm). [positive is right turn; negative is left turn]
+# Angle is robot heading end. [positive is forward; negative is backward]
+drive_base.arc(100, angle=-45)#turning in home
+drive_base.straight(-1120) #going into homes wall
 
-# Drive back to home
-drive_base.straight(-670)
 
+'''
 # OPTIONAL (add this before driving)
 # Default speed is 700, but can change as needed (Minimum = 4, Max = 977)
-drive_base.settings(straight_speed=670)
+drive_base.settings(straight_speed=870)
 # Turn one wheel only.
 # 56 is half of wheel base. [positive is right turn; negative is left turn]
 # Angle is robot heading end. [positive is forward; negative is backward]
-drive_base.arc(55, angle=90)
+drive_base.arc(-55, angle=90) #turning to home
+
 # Turn one wheel only.
 # 56 is half of wheel base. [positive is right turn; negative is left turn]
 # Angle is robot heading end. [positive is forward; negative is backward]
+
 
 # OPTIONAL (add this before driving)
 # Default speed is 900, but can change as needed (Minimum = 4, Max = 977)
 drive_base.settings(straight_speed=970)
 
 # Drive forward by 500mm (half a meter)
-drive_base.straight(300)
+drive_base.straight(-250) #driving to home
 drive_base.settings(straight_speed=970)
-
 # OPTIONAL (add this before driving)
 # Default speed is 900, but can change as needed (Minimum = 9, Max = 977)
 drive_base.settings(straight_speed=900)
+'''

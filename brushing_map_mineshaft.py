@@ -1,4 +1,5 @@
 
+
 # Sets up the libraries and hub
 from pybricks.hubs import PrimeHub
 from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSensor
@@ -50,11 +51,11 @@ drive_base.use_gyro(True)
 
 # OPTIONAL (add this before driving)
 # Default speed is 200, but can change as needed (Minimum = 4, Max = 977)
-drive_base.settings(straight_speed=400)
+drive_base.settings(straight_speed=500)
 
 
-drive_base.straight(500)
-drive_base.straight(-200)
+drive_base.straight(525)
+drive_base.straight(-225)
 drive_base.arc(15, angle=45)
 drive_base.straight(-80)
 
@@ -83,12 +84,12 @@ print("Now going to 2nd slab")
 drive_base.straight(150)#getting 2nd slab
 drive_base.settings(straight_speed=150)
 print("turning")
-drive_base.turn(120) #securing 2nd slab. BASED 110
+drive_base.turn(115) #securing 2nd slab. BASED 110
 drive_base.straight(300) #going to circle
-drive_base.arc(25, 105) #Arching Into circle BASED 110
-drive_base.arc(25, -50) #BASED IN -50
-drive_base.stright(-75)
-rear_motor
+drive_base.turn(65)
+drive_base.straight(-45) #drive_base.arc(25, 105) #Arching Into circle BASED 110
+#drive_base.arc(25, -50) #BASED IN -50
+rear_motor.run_target(250,2500)
 
 '''
 CODE EXPIRED MAD NEW WIP!!

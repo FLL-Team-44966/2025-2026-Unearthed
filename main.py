@@ -1,7 +1,7 @@
 from pybricks.tools import hub_menu
 
 # Choose a letter.
-selected = hub_menu("1","2","3","4","5","6","7","8")
+selected = hub_menu("1","2","3","4","5","6","7","8", "9")
 
 # Based on the selection, run a program.
 if selected == "1":
@@ -20,3 +20,5 @@ elif selected == "7":
     import brushing_map_mineshaft
 elif selected == "8":
     import salvage_operation
+elif selected == "9":
+    import transition 

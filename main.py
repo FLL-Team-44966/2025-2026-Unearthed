@@ -17,7 +17,7 @@ elif selected == "5":
 elif selected == "6":
     import heavy_lifting
 elif selected == "7":
-    import brushing_map_mineshaft
+    import brushing_map
 elif selected == "8":
     import salvage_operation
 elif selected == "9":

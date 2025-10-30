@@ -54,6 +54,7 @@ drive_base.use_gyro(True)
 drive_base.settings(straight_speed=500)
 
 
+#START OF REAL CODE
 drive_base.straight(525)
 drive_base.straight(-225)
 drive_base.arc(15, angle=45)
@@ -63,19 +64,23 @@ drive_base.straight(-80)
 drive_base.settings(straight_speed=200)
 drive_base.arc(25, -43)
 drive_base.straight(60)
-drive_base.settings(turn_rate=75) #changes speed for easier grabe #500 normal test 100
+drive_base.settings(turn_rate=50) #changes speed for easier grabe #500 normal test 100
 
 
 
-
+drive_base.straight(30)
 drive_base.arc(100, 45) #Grabbing brush
+drive_base.straight(-30)
+
+
 
 
 drive_base.straight(20)
 drive_base.arc(50, -45)
 drive_base.straight(220)#going to soil deposit
 drive_base.turn(-45) #turns to 1 slab
-drive_base.straight(155)
+drive_base.straight(155) #1 slab push
+drive_base.turn(-10) #TEST TURN AWAY FROM SLAB SO COUNTS
 drive_base.straight(-255) #backing away from soil deposit after moving 1st slab
 
 
@@ -84,12 +89,21 @@ print("Now going to 2nd slab")
 drive_base.straight(150)#getting 2nd slab
 drive_base.settings(straight_speed=150)
 print("turning")
-drive_base.turn(115) #securing 2nd slab. BASED 110
+drive_base.turn(200) #securing 2nd slab. BASED 110
+drive_base.straight(distance=5000)
+
+#END CODE!! 10/24/25 
+
+'''
+CODE FOR MINESHAFT ADDITION EXPIRED 10/24/25
 drive_base.straight(300) #going to circle
 drive_base.turn(65)
-drive_base.straight(-45) #drive_base.arc(25, 105) #Arching Into circle BASED 110
+drive_base.straight(-50) #drive_base.arc(25, 105) #Arching Into circle BASED 110
 #drive_base.arc(25, -50) #BASED IN -50
-rear_motor.run_target(250,2500)
+rear_motor.run_target(150,2500)
+'''
+
+#END OF REAL CODE !!
 
 '''
 CODE EXPIRED MAD NEW WIP!!

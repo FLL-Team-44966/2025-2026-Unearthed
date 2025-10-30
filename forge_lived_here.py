@@ -32,6 +32,9 @@ drive_base.straight(100)# Driving to move land
 # 56 is half of wheel base. [positive is right turn; negative is left turn]
 # Angle is robot heading end. [positive is forward; negative is backward]
 drive_base.arc(56, angle=90) #aligns to home
+drive_base.arc(1000, -45)
+
+'''
 drive_base.straight(-475) # Drive back to home
  
 # Drives an arc (a partial circle) with a given radius.
@@ -39,7 +42,7 @@ drive_base.straight(-475) # Drive back to home
 # Angle is robot heading end. [positive is forward; negative is backward]
 drive_base.arc(100, angle=-45)#turning in home
 drive_base.straight(-1120) #going into homes wall
-
+'''
 
 '''
 # OPTIONAL (add this before driving)

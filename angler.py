@@ -40,8 +40,6 @@ for i in range(10):
 # Angle is robot heading end. [positive is forward; negative is backward]
     drive_base.turn(-30) #hitting lever
     drive_base.turn(30)
-drive_base.settings(straight_speed=200)
-drive_base.straight(200) #driving home
-drive_base.turn(-60)
-drive_base.settings(straight_speed=977)
-drive_base.straight(-1000)
+    drive_base.settings(straight_speed=450)
+drive_base.arc(-125, 90)
+drive_base.arc(-700, 150)

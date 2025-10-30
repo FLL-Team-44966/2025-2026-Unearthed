@@ -24,9 +24,15 @@ drive_base.use_gyro(True)
 
 # First value is speed (deg/sec)
 # Second value is the amount of rotation (deg)
-rear_motor.run_angle(100,-200)
-drive_base.settings(straight_speed=400)
-drive_base.straight(100)
+#rear_motor.run_angle(100,-200)
+ #   drive_base.settings(straight_speed=400)
+  #  drive_base.straight(100)
 
-rear_motor.run_angle(100, 200)
+   # rear_motor.run_angle(100, 200)
 
+front_motor.run_angle(500, 200)
+front_motor.run_angle(-1000, 200)
+# Drives an arc (a partial circle) with a given radius.
+# First value is radius (mm). [positive is right turn; negative is left turn]
+# Angle is robot heading end. [positive is forward; negative is backward]
+drive_base.arc(160, -180)
